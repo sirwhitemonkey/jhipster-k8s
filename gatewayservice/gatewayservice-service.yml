@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gatewayservice
+  namespace: hawaiki-demo
+  labels:
+    app: gatewayservice
+spec:
+  selector:
+    app: gatewayservice
+  type: ClusterIP
+  ports:
+  - name: web
+    port: 9006

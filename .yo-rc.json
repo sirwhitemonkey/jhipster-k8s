@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "jhipster-billing-service",
+      "jhipster-customer-service",
+      "jhipster-gateway-service",
+      "jhipster-license-service"
+    ],
+    "directoryPath": "../",
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "b1a023872d3c83135c98e240dfe52948bacd79a1",
+    "dockerRepositoryName": "sirwhitemonkey",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "hawaiki-demo",
+    "kubernetesServiceType": "Ingress",
+    "ingressDomain": "hawaiki-demo.co.nz"
+  }
+}

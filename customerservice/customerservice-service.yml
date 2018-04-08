@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: customerservice
+  namespace: hawaiki-demo
+  labels:
+    app: customerservice
+spec:
+  selector:
+    app: customerservice
+  ports:
+  - name: web
+    port: 9008

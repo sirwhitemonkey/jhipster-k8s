@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: jhipster-registry
+  namespace: hawaiki-demo
+spec:
+  rules:
+  - host: jhipster-registry.hawaiki-demo.co.nz
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: jhipster-registry
+          servicePort: 8761

@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gatewayservice
+  namespace: hawaiki-demo
+spec:
+  rules:
+  - host: gatewayservice.hawaiki-demo.co.nz
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: gatewayservice
+          servicePort: 9006
